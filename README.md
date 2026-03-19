@@ -1,4 +1,119 @@
-# ARP spoofing detection tool
+🛡️ ARP Spoofing Detection System
+📌 Overview
+
+The ARP Spoofing Detection System is a cybersecurity project designed to detect ARP (Address Resolution Protocol) spoofing attacks in real-time.
+
+This tool monitors network traffic and identifies suspicious changes in IP–MAC address mappings, helping prevent Man-in-the-Middle (MITM) attacks.
+
+🚨 Problem Statement
+
+ARP spoofing is a common attack where an attacker sends fake ARP messages to:
+
+Associate their MAC address with a legitimate IP
+
+Intercept or modify network traffic
+
+This project aims to:
+✔ Detect such attacks
+✔ Alert users instantly
+✔ Improve network security
+
+⚙️ Features
+
+🔍 Real-time network monitoring
+
+⚠️ Detection of ARP spoofing attacks
+
+📡 IP–MAC address verification
+
+🚨 Alert system for suspicious activity
+
+🧠 Lightweight and efficient
+
+🛠️ Technologies Used
+
+Python 🐍
+
+Scapy (for packet sniffing)
+
+Socket Programming
+
+Networking Concepts (ARP Protocol)
+
+📂 Project Structure
+ARP-Spoofing-Detection/
+│── main.py
+│── detector.py
+│── utils.py
+│── requirements.txt
+│── README.md
+🚀 Installation
+1. Clone the repository
+git clone https://github.com/your-username/arp-spoofing-detection.git
+cd arp-spoofing-detection
+2. Install dependencies
+pip install -r requirements.txt
+▶️ Usage
+
+Run the script:
+
+python main.py
+
+👉 The system will start monitoring network traffic and detect ARP spoofing attempts.
+
+🧪 How It Works
+
+Captures ARP packets from the network
+
+Compares IP–MAC mappings
+
+Detects mismatches or duplicates
+
+Triggers alert if spoofing is suspected
+
+📸 Output Example
+[ALERT] Possible ARP Spoofing Detected!
+IP: 192.168.1.1
+Real MAC: AA:BB:CC:DD:EE:FF
+Fake MAC: 11:22:33:44:55:66
+🔒 Use Cases
+
+Network security monitoring
+
+Educational cybersecurity labs
+
+SOC (Security Operations Center) tools
+
+Ethical hacking practice
+
+⚠️ Disclaimer
+
+This tool is intended for educational and ethical use only.
+Do not use it on networks without permission.
+
+👨‍💻 Author
+
+Bala P
+Cybersecurity Enthusiast
+
+⭐ Future Improvements
+
+GUI Dashboard
+
+Email/SMS alerts
+
+Integration with SIEM tools
+
+AI-based anomaly detection
+
+🤝 Contributing
+
+Contributions are welcome!
+Feel free to fork and improve the project.
+
+📜 License
+
+This project is licensed under the MIT License.# ARP spoofing detection tool
 An ARP spoofing detection written in python using Scapy library, based on the paper "Detecting ARP Spoofing: An Active Technique" by Vivek Ramachandran and Sukumar Nandi, India
 
 
